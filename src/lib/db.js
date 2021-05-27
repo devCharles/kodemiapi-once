@@ -1,10 +1,12 @@
 
 const mongoose = require('mongoose')
 
-const DB_USER = 'charles'
-const DB_PASSWORD = 'kodemia123'
-const DB_HOST = 'kodemia-once.a5ptt.mongodb.net'
-const DB_NAME = 'kodemia'
+const { 
+  DB_USER, 
+  DB_PASSWORD, 
+  DB_HOST, 
+  DB_NAME 
+} = process.env
 
 const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
 
